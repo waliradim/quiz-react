@@ -1,9 +1,11 @@
+import "../styles/App.css";
+import Layout from "./Layout";
+import Home from "./pages/Home";
 function App() {
   return (
-    <div>
-      <h1>Hello Quiz</h1>
-      <h1>Radim</h1>
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 }
 

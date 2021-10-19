@@ -16,5 +16,6 @@
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "editor.fontSize": 16
 }
