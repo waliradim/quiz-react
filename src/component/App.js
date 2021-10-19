@@ -1,7 +1,8 @@
 function App() {
   return (
     <div>
-      <h1>Hello Quize</h1>
+      <h1>Hello Quiz</h1>
+      <h1>Radim</h1>
     </div>
   );
 }
