@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
   }
 
   //logout function
-  function logOut(params) {
+  function logOut() {
     const auth = getAuth();
     return signOut(auth);
   }
