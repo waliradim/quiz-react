@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 /html
-
+/compare.js
 # testing
 /coverage
 

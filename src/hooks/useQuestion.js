@@ -4,13 +4,14 @@ import { useEffect, useState } from "react";
 export default function useQuestion(videoID) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-
   const [questions, setQuestions] = useState([]);
+
   useEffect(() => {
     async function fatchQuestions() {
       const db = getDatabase(); //db connection
-      const quizTblRef = ref(db, "quiz/" + videoID + "questions"); //db connection and table name from database firebase
+      const quizTblRef = ref(db, "quiz/" + videoID + "/questions"); //db connection and table name from database firebase
       const quizQuery = query(quizTblRef, orderByKey());
+
       try {
         setError(false);
         setLoading(true);
