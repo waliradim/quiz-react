@@ -97,6 +97,7 @@ export default function Quiz() {
           <h1>{questionCopy[currentQuestion].title}</h1>
           <h4>Question can have multiple answers</h4>
           <Answer
+            input={true}
             options={questionCopy[currentQuestion].options}
             handleChange={handleAnswerChange}
           />
