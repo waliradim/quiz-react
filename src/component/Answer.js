@@ -4,7 +4,6 @@ import Checkbox from "./Checkbox";
 export default function Answer({ options = [], handleChange, input }) {
   return (
     <div className={classes.answers}>
-      {console.log("answer component")}
       {options.map((option, index) => (
         <Fragment key={index}>
           {input ? (

@@ -7,9 +7,8 @@ export default function Question({ answers = [] }) {
       <div className={classes.qtitle}>
         <span className="material-icons-outlined"> help_outline </span>
         {answer.title}
-        {console.log("question component")}
       </div>
-      <Answer input={false} option={answer.options} />
+      <Answer input={false} options={answer.options} />
     </div>
   ));
 }
