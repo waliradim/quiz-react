@@ -44,7 +44,6 @@ export default function Result() {
       {error && <div>There was an Error...</div>}
       {answers && answers.length > 0 && (
         <>
-          {console.log("result component")}
           <Summary score={userScore} noq={answers.length} />
           <Analysis answers={answers} />
         </>
