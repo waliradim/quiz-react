@@ -107,7 +107,7 @@ export default function Quiz() {
             progress={progressbar}
             submit={submit}
           />
-          <MiniPlayer />
+          <MiniPlayer id={id} title={questionCopy[currentQuestion].title} />
         </>
       )}
     </>
