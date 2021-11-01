@@ -15,9 +15,11 @@ export default function Result() {
 
   function quizMark() {
     let score = 0;
+
     answers.forEach((question, index1) => {
       let correctIndexes = [],
         checkedIndexes = [];
+
       question.options.forEach((option, index2) => {
         if (option.correct) correctIndexes.push(index2);
         if (questionCopy[index1].options[index2].checked) {
@@ -25,10 +27,12 @@ export default function Result() {
           option.checked = true;
         }
       });
+
       if (_.isEqual(correctIndexes, checkedIndexes)) {
         score = score + 5;
       }
     });
+
     return score;
   }
 
